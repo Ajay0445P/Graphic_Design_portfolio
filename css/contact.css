@@ -1,0 +1,100 @@
+.Navbar{
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  padding-right: 30px;
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.Navbar a{
+  color: white;
+  text-decoration: none;
+}
+.Navbar a:hover{
+  text-decoration: underline;
+}
+body{
+  background-color: #FF6464;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+body h1{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+form{
+  background-color: white;
+  color: black;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+form input, form textarea{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+form button{
+  background-color: #FF6464;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form button:hover{
+  background-color: #e05555;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .Navbar a {
+    font-size: 20px;
+  }
+  form {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+@media (max-width: 400px) {
+  body h1 {
+    font-size: 40px;
+  }
+  form button {
+    width: 100%;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
